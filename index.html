@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layanan ML Specialist</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gray-900 text-white font-sans">
+    <header
+      class="bg-gradient-to-r from-blue-900 via-black to-red-900 py-10 text-center shadow-lg"
+    >
+      <h1
+        class="text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 animate-pulse drop-shadow-lg"
+      >
+        Dark Web Game
+      </h1>
+      <p class="mt-2 text-gray-300 text-sm tracking-widest uppercase">
+        Layanan Jual Beli Akun Mobile Legends, Joki Rank, Push MMR, Top Up
+        Diamond dan WDP
+      </p>
+    </header>
+
+    <!-- Tab Navigasi -->
+    <nav class="flex justify-center gap-4 py-6 bg-gray-800">
+      <button onclick="openTab('jual-tab')" class="tab-button active">
+        Jual Akun
+      </button>
+      <button onclick="openTab('joki-tab')" class="tab-button">
+        Joki Rank
+      </button>
+      <button onclick="openTab('mmr-tab')" class="tab-button">Push MMR</button>
+      <button onclick="openTab('topup-tab')" class="tab-button">Top Up</button>
+    </nav>
+
+    <!-- Konten Tab -->
+    <main class="p-4">
+      <!-- Jual Akun -->
+      <section id="jual-tab" class="tab-content block">
+        <h2 class="text-3xl font-bold text-center mb-6">
+          Jual Akun Mobile Legends
+        </h2>
+        <div
+          id="daftar-akun"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+        ></div>
+      </section>
+
+      <!-- Joki Rank -->
+      <section id="joki-tab" class="tab-content hidden">
+        <h2 class="text-3xl font-bold text-center mb-6">Layanan Joki Rank</h2>
+        <div
+          id="daftar-joki"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+        ></div>
+      </section>
+
+      <!-- Push MMR -->
+      <section id="mmr-tab" class="tab-content hidden">
+        <h2 class="text-3xl font-bold text-center mb-6">
+          Layanan Push MMR Hero
+        </h2>
+        <div
+          id="daftar-mmr"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+        ></div>
+      </section>
+    </main>
+
+    <!-- Konten Baru: Top Up Diamond dan WDP -->
+    <div id="topup-tab" class="tab-content hidden">
+      <div
+        id="daftar-topup"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+      ></div>
+    </div>
+    <script src="script.js"></script>
+
+    <footer
+      class="bg-gray-900 text-gray-300 text-sm py-6 mt-10 border-t border-gray-700"
+    >
+      <div
+        class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4"
+      >
+        <div class="flex space-x-6">
+          <a href="#" class="hover:text-white"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" class="hover:text-white"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="#" class="hover:text-white"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a
+            href="https://youtube.com/@muhammadriliramadhan9867"
+            target="_blank"
+            class="hover:text-white"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </div>
+
+        <div class="text-center">
+          <nav class="flex space-x-4 mb-1"></nav>
+          <p>
+            Created by
+            <span class="font-semibold text-white">muhammadriliramadhan</span> |
+            © 2025
+          </p>
+          <p class="mt-1">📞 0895-7110-60608</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
